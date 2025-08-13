@@ -1,0 +1,21 @@
+<%= simple_form_for(@empresa) do |f| %>
+  <%= f.error_notification %>
+  <div class="form-inputs ">
+    <div class="col-4">
+      <%= f.input :cnpj %>
+    </div>
+    <div class="col-4">
+      <%= f.input :tipo %>
+    </div>
+    <div class="col-4">
+      <%= f.input :nome %>
+    </div>
+    <div class="col-4">
+      <%= f.input :porte %>
+    </div>
+  </div>
+</div>
+<div class="form-actions">
+  <%= f.button :submit, "Salvar Empresa", class: "btn btn-primary" %>
+</div>
+<% end %>
